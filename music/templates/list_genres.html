@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Genres</title>
+</head>
+<body>
+    <h1>List of Genres</h1>
+    <ul>
+        {% for genre in genres %}
+        <li>{{ genre.name }} <a href="{% url 'view_music' genre.id %}">View Music</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

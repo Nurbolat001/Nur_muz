@@ -1,0 +1,99 @@
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 25%; /* Увеличен размер карточки */
+    flex:50%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Увеличен радиус скругления углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+/* Стили для формы */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Стили для блока с полями формы */
+.form-block {
+  margin-bottom: 20px;
+}
+
+/* Стили для меток полей */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Стили для полей ввода */
+input[type="text"],
+input[type="url"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Стили для кнопки отправки формы */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+}
+
+/* Стили для кнопки отправки формы при наведении */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.asq{
+    margin-top: 5%;
+    margin-left: 28%;
+}
+
+.qq{
+    width: 220px;
+    margin-right: 6%;
+}
+
+.qw{
+    margin-right: 10%;
+}
+
+.z{
+    margin-top: 7%;
+    margin-left: 8%;
+    margin-bottom: 8%;
+    }
+.pp{
+    margin-left: 10%;
+}
+

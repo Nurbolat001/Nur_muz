@@ -1,0 +1,58 @@
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 23%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.audio-controls {
+  margin-top: 10px;
+
+}
+
+/* Определяем стили для кнопок управления аудио */
+.audio-controls button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.audio-controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для аудиоплеера */
+
+
+/* Стили для изображений музыки */
+.music-image {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+

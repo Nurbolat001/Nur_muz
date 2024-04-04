@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Добавление музыки{% endblock %}
+
+{% block content %}
+{% block style %}
+<style>
+  /* Стили для формы регистрации */
+  form {
+      max-width: 550px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  }
+
+  .mb-3 {
+      margin-bottom: 15px;
+  }
+
+  .form-label {
+      font-weight: bold;
+  }
+
+  .form-control {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+  }
+
+
+  }
+
+</style>
+{% endblock%}
+<h1>Добавление музыки</h1>
+
+<form action="{% url 'add_muz' %}" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+  <div class="mb-3">
+    <label for="title" class="form-label">Название музыки</label>
+    <input type="text" class="form-control" id="title" name="title" required>
+  </div>
+
+    <div class="mb-3">
+    <label for="genre" class="form-label">Жанр</label>
+    <select class="form-select" id="genre" name="genre" required>
+      {% for genre in genres %}
+        <option value="{{ genre.id }}">{{ genre.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label for="audio" class="form-label">Аудиофайл</label>
+    <input type="file" class="form-control" id="audio" name="audio" accept="audio/*" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="photo" class="form-label">Фото</label>
+    <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Добавить музыку</button>
+</form>
+
+{% endblock %}
